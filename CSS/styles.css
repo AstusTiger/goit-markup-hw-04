@@ -423,17 +423,7 @@ header nav {
     border-bottom: 1px solid #ECECEC;
 }
 
-.container-clients {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--ultra-light-backgroud);
-    margin-top: 50px;
-}
-
-.clients-link {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
+/*CLIENTS*/
 
 .clients {
     font-weight: 700;
@@ -443,7 +433,28 @@ header nav {
     color: var(--black-text);
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
+
+.clients-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--white-text)
+}
+
+.logo-company {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: var(--main-text);
+    padding: 16px 32px;
+}
+
+.logo-company:hover {
+    border-color: var(--active-text);
+}
+
 
 .icon-company1
 .icon-company2
@@ -451,9 +462,17 @@ header nav {
 .icon-company4
 .icon-company5
 .icon-company6 {
-    color: var(--main-text);
-    fill: currentColor;
-    border: 1px solid black;
+    margin: auto auto;
+	fill: var(--main-text);
+}
+
+.icon-company1:hover,
+.icon-company2:hover,
+.icon-company3:hover,
+.icon-company4:hover,
+.icon-company5:hover,
+.icon-company6:hover {
+	fill: var(--active-text);
 }
 
 
@@ -510,11 +529,6 @@ header nav {
     color: var(--white-text);
 }
 
-.buttons:active {
-    background-color: var(--active-text);
-    color: var(--white-text);
-}
-
 .block-projects {
     display: flex;
     flex-wrap: wrap;
@@ -527,6 +541,10 @@ header nav {
 
 .portfolio-card {
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-info {
@@ -603,8 +621,6 @@ footer {
 }
 
 .ours-socialnetworks {
-	/* margin-top: 20px; */
-    /* margin-top: 20px; */
 	margin-left: 70px;
 }
 
@@ -618,6 +634,7 @@ footer {
 	letter-spacing: 0.03em;
 
 }
+
 .ours-socialnetworks-container {
 	display: flex;
 	justify-content: space-between;
