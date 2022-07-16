@@ -37,7 +37,7 @@ p {
     --black-text: #212121;
     --ultra-black-text: #000000;
     --line-color: #ECECEC;
-	/* --logo-primery-color: #AFB1B8; */
+	--logo-primery-color: #AFB1B8; 
 }
 
 .container {
@@ -172,8 +172,8 @@ header nav {
     fill: currentColor;
 }
 
-.icon-envelope:hover,
-.icon-smartphone:hover {
+.contacts:hover .icon-envelope,
+.contacts:hover .icon-smartphone {
     fill: var(--active-text);
 }
 
@@ -209,7 +209,7 @@ header nav {
 /* MAIN */
 /* STUDIO */
 
-/* hero */
+/* HERO */
 
 .hero {
     background-color: var(--dark-background);
@@ -268,6 +268,8 @@ header nav {
     color: var(--white-text);
 }
 
+/*PLUSES*/
+
 .button-studio:active {
     color: var(--black-text);
     background-color: var(--light-background);
@@ -310,6 +312,8 @@ header nav {
     width: 270px;
 }
 
+/*ACTIVITY*/
+
 .container-activity {
     display: flex;
     justify-content: space-between;
@@ -330,6 +334,8 @@ header nav {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+/*TEAM*/
 
 .container-team {
     display: flex;
@@ -392,7 +398,7 @@ header nav {
 .icon-twitter,
 .icon-facebook,
 .icon-linkedin { 
-    fill: var(--main-text);
+    fill: var(--logo-primery-color);
 }
 
 .members-socialnetworks-element:hover .pictures,
@@ -441,38 +447,24 @@ header nav {
     justify-content: space-between;
     background-color: var(--white-text)
 }
-
-.logo-company {
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
+.clients-container-element {
+    display: block;
+    border: 1px solid var(--logo-primery-color);
     border-radius: 4px;
-    fill: var(--main-text);
     padding: 16px 32px;
 }
-
-.logo-company:hover {
+.logo-company {
+    fill: var(--logo-primery-color);
+}
+.clients-container-element:hover,
+.clients-container-element:focus {
+    outline: none;
     border-color: var(--active-text);
 }
-
-
-.icon-company1
-.icon-company2
-.icon-company3
-.icon-company4
-.icon-company5
-.icon-company6 {
-    margin: auto auto;
-	fill: var(--main-text);
-}
-
-.icon-company1:hover,
-.icon-company2:hover,
-.icon-company3:hover,
-.icon-company4:hover,
-.icon-company5:hover,
-.icon-company6:hover {
-	fill: var(--active-text);
+.clients-container-element:hover .logo-company,
+.clients-container-element:focus .logo-company
+{
+    fill: var(--active-text);
 }
 
 
